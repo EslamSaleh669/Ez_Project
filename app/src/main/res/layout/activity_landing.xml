@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landingbackground"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="30dp"
+    tools:context=".ui.activity.LandingActivity">
+
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:src="@drawable/ezuresplashlpgo"-->
+<!--        android:transitionName="logo" />-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:fontFamily="@font/plautenezbold"-->
+<!--        android:text="@string/welcome_to_ezuru"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="26sp" />-->
+
+    <Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48sp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/roundedshape"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+        android:text="@string/create_your_account"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/toSignInBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:background="@drawable/roundedgray"
+        android:paddingTop="22dp"
+        android:paddingBottom="22dp"
+        android:text="@string/sign_in"
+        android:textColor="@color/colorPrimary" />
+
+
+</LinearLayout>

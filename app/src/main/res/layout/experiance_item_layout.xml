@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="150dp"
+    android:layout_height="210dp"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="150dp"
+            android:layout_height="210dp"
+            android:src="@drawable/ic_default_unit"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:layout_width="150dp"
+            android:layout_height="210dp"
+            android:background="#40000000" />
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="10dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:background="@drawable/rounded_white_50_filled_bg"
+            android:drawableStart="@drawable/ic_white_rate_star"
+            android:drawablePadding="8dp"
+            android:paddingStart="10dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="10dp"
+            android:paddingBottom="5dp"
+            android:text="4.2"
+            android:textColor="@color/white" />
+
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

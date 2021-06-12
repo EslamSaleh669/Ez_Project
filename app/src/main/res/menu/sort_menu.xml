@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/date"
+        android:title="Newest"
+        android:titleCondensed="DATE" />
+    <item
+        android:id="@+id/featured"
+        android:title="Oldest"
+        android:titleCondensed="DATEASC" />
+    <item
+        android:id="@+id/hPrice"
+        android:title="High Price"
+        android:titleCondensed="PRICE" />
+    <item
+        android:id="@+id/lPrice"
+        android:title="Low Price"
+
+        android:titleCondensed="PRICEASC" />
+    <item
+        android:id="@+id/FEATURED"
+        android:title="Featured"
+        android:titleCondensed="FEATURED" />
+    <item
+        android:id="@+id/rated"
+        android:title="Rated"
+        android:titleCondensed="RATED" />
+    <item
+        android:id="@+id/popular"
+        android:title="Popular"
+        android:titleCondensed="POPULAR" />
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    app:cardCornerRadius="10dp"
+    android:elevation="5dp"
+    >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
+            >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="aaaaaaaaaaaaaaa"
+                android:id="@+id/dialogtitle"
+                android:fontFamily="@font/plautenezbold"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/dialogmessage"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:fontFamily="@font/plautenezbold"
+                android:text="aaaaaaaaaaaaaaaaaa" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dilogok"
+                android:layout_gravity="end"
+                android:text="@string/ok"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/plautenezbold"
+                android:background="@drawable/roundedshape"
+                android:layout_marginTop="20dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

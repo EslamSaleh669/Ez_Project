@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "835775190376",
+    "project_id": "ezuru-22d43",
+    "storage_bucket": "ezuru-22d43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:835775190376:android:ff2408df08c5dde6fa32dd",
+        "android_client_info": {
+          "package_name": "com.ezuru"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "835775190376-v9t7l7ug7mhmn902t4atbrrohetcenvk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1ZGAQWLIWJY96v6G4BJOIMHv93qAjqag"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "835775190376-v9t7l7ug7mhmn902t4atbrrohetcenvk.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "835775190376-ergn02r2ik6vl5qb004jpm7g7ocj4ovr.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "Ezuru-iOS"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

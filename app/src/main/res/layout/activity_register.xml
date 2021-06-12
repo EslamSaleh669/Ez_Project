@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="80dp">
+
+        <FrameLayout
+            android:id="@+id/actionBar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            android:paddingStart="32dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/ic_back_arrow" />
+            </FrameLayout>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_logo_small" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/guideline3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actionBar" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".4" />
+
+        <TextView
+            android:id="@+id/createNewAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/create_your_account"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/actionBar" />
+
+        <TextView
+            android:id="@+id/introText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="@font/lato_bold"
+            android:gravity="center"
+            android:text="@string/create_a_new_account_to"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/createNewAccount" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/introText"
+                android:layout_marginTop="16dp"
+                >
+
+
+                <EditText
+                    android:id="@+id/nameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/full_name"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_white_filled_bg"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/email"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:inputType="text"
+                    android:layout_marginTop="20dp"
+                    android:maxLines="1" />
+
+
+                <EditText
+                    android:id="@+id/emailInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/email"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_white_filled_bg"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/email"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="20dp"
+                    android:maxLines="1" />
+
+
+                <EditText
+                    android:id="@+id/passwordInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="@string/enter_your_password"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_white_filled_bg"
+                    android:backgroundTint="@color/white"
+                    android:drawableLeft="@drawable/email"
+                    android:drawableStart="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:inputType="textPassword"
+                    android:layout_marginTop="20dp"
+                    android:maxLines="1" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/rounded_white_filled_bg"
+                    android:orientation="horizontal">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/phoneKey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:ccpDialog_fastScroller_bubbleColor="@color/colorPrimary"
+                        app:ccp_arrowSize="18sp"
+                        app:ccp_contentColor="@color/colorPrimary"
+                        app:ccp_defaultNameCode="EG"
+                        app:ccp_showFlag="true"
+                        app:ccp_showFullName="false"
+                        app:ccp_showNameCode="false"
+                        app:ccp_showPhoneCode="true"
+                        app:ccp_textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/phoneInput"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:hint="@string/phone_number"
+                        android:maxLines="1"
+                        android:paddingTop="8dp" />
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/registerBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="48sp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="48dp"
+                    android:background="@drawable/roundedshape"
+                    android:paddingTop="22dp"
+                    android:paddingBottom="22dp"
+                    android:text="@string/create_your_account"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

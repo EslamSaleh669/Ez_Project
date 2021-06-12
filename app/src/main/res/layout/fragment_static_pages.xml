@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="18sp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:id="@+id/backBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="20dp"
+                    android:src="@drawable/ic_back_black" />
+
+
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/logoutBtn"-->
+                <!--                    android:layout_width="30dp"-->
+                <!--                    android:layout_height="30dp"-->
+                <!--                    android:layout_gravity="end|center_vertical"-->
+                <!--                    android:src="@drawable/ic_logout" />-->
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/whyAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="static/whyezuru">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/why_ezuru"
+                    android:textColor="#222222"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/newsAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="press">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/press"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+
+            <FrameLayout
+                android:id="@+id/aboutAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="static/about">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/about"
+                    android:textColor="#222222"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/checkInAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:tag="checkin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="check in"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:visibility="gone"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/contactInAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="static/contact">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/contact_us"
+                    android:textColor="#222222"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/faqInAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="faq">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/faq"
+                    android:textColor="#222222"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/howWrokInAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="static/how-it-works">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/how_it_works"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+
+            <FrameLayout
+                android:id="@+id/partinersAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="static/partiners">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/partners"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/paymentMethodsAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="static/payments">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/payment_methods"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+
+            <FrameLayout
+                android:id="@+id/trustSafteyAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="static/trustsaftey">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/trust_safety"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/cancleAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="static/cancle-policy">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/cancel"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/blogAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="blog">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/blog"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/careersAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="careers">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/careers"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/termsAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="static/terms">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/terms"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+            <FrameLayout
+                android:id="@+id/privacyAction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="static/privacy">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center_vertical"
+                    android:text="@string/privacy_policy"
+                    android:fontFamily="@font/plautenezbold"
+                    android:textColor="#222222"
+                    android:textSize="18sp" />
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D8D8D8" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
